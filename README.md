@@ -11,7 +11,7 @@ In this project, I observed various network traffic transmitted to and from two 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - Several Command-Line Tools (Powershell, Command Prompts)
-- Different Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Different Network Protocols (SSH, RDP, DNS, DHCP, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
