@@ -10,14 +10,14 @@ In this project, I observed various network traffic transmitted to and from two 
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
-- Several Command-Line Tools (Powershell, Command Prompts)
-- Different Network Protocols (SSH, RDP, DNS, DHCP, ICMP)
+- Command-Line Tools (Powershell, Command Prompts)
+- Several Network Protocols (SSH, RDP, DNS, DHCP, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04 (Linux)
+- Linux (Ubuntu Server 20.04) 
 
 <h2>High-Level Steps</h2>
 
