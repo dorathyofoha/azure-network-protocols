@@ -34,7 +34,7 @@ In this project, I observed various network traffic transmitted to and from two 
 <h2>Actions and Observations</h2>
 
 <p>
-First, I created two VMs on Azure. One machine was a Linux machine and the other was a Windows 10 machine. Both has two CPUs and were on the same VNET. After that, I downloaded Wireshark on Windows Machine. Here's a link to download Wireshark: https://www.wireshark.org/download.html. Once, it was installed, I opened Wireshark and filtered for ICMP Traffic only. ICMP is a network layer protocol that relays messages concerning network connection issues. Ping uses this protocol. Ping tests connectivity between hosts. When I filtered Wireshark to only capture ICMP packets and ping the private IP address of the Linux machine I visually saw the packets on Wireshark. 
+First, I created two VMs on Azure. The first machine was a Linux VM and the second was a Windows 10 VM. Both has two CPUs and were on the same VNET. After that, I downloaded Wireshark on Windows Machine. Here's a link to download Wireshark: https://www.wireshark.org/download.html. Once, it was installed, I opened Wireshark and filtered for ICMP Traffic only. ICMP is a network layer protocol that relays messages concerning network connection issues. Ping uses this protocol. Ping tests connectivity between hosts. When I filtered Wireshark to only capture ICMP packets and ping the private IP address of the Linux machine I visually saw the packets on Wireshark. 
 </p>
 <p>
 <img src="https://i.imgur.com/iFYdOiV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -50,7 +50,7 @@ I inspected each individual packet and saw the actual data that was being sent i
 <br />
 
 <p>
-Next I initiated a perpetual ping in the Linux machine with the command ping -t. This continually ping the machine until I decided to stop it, while the Windows machine is pinging the Linux machine we went back to the Linux machine and blocked inbound ICMP traffic on its firewall. Once I did that, I stopped receiving echo replies from the Linux machine. I went further to deny ICMP traffic by creating a new Network Security Group on the Linux machine that will be set to block ICMP. I can allow traffic by authorizing ICMP on the Linux Network Security Groups page on Azure. 
+Next I initiated a perpetual ping in the Linux machine with the command ping -t. This continually ping the machine until I decided to stop it, while the Windows machine is pinging the Linux machine we went back to the Linux machine and blocked inbound ICMP traffic on its firewall. Once I did that, I stopped receiving echo replies from the Linux VM. I went further to deny ICMP traffic by creating a new Network Security Group on the Linux machine that will be set to block ICMP. I can allow traffic by authorizing ICMP on the Linux Network Security Groups page on Azure. 
 </p>
 <p>
 <img src="https://i.imgur.com/aTG3sxe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
